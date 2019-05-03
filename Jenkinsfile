@@ -22,7 +22,7 @@ pipeline {
         always {
             // Report test results
             // junit 'target/surefire-reports/*.xml'
-            junit --reporter-options output=filename.xml
+            junit --reporter-options output=*.xml
         }
     }
 }
