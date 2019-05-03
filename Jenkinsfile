@@ -21,8 +21,7 @@ pipeline {
     post {
         always {
             // Report test results
-            // junit 'target/surefire-reports/*.xml'
-            junit --reporter-options output='target/surefire-reports/*.xml'
+            junit 'target/surefire-reports/*.xml'
         }
     }
 }
